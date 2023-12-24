@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #202020;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 2.0;
+  color: #f0f8ff;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.button {
+  color: #202020;
+  background-color: #f0f8ff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+  margin: 1rem 0;
+  transition: .4s;
+}
+
+.fadein {
+  opacity: 0;
+}
+
+/*
+  Menu
+*/
+.buttonMenu {
+  position: fixed;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 4;
+  padding: .5rem 1rem;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  transition: .4s;
+}
+
+.buttonMenu svg {
+  margin-top: .25rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.menuPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  padding: 8rem 2rem 2rem;
+  width: max(16vw, 16rem);
+  height: 100vh;
+  background-color: #353535;
+  translate: 0vw;
+}
+
+.menuList {
+  list-style: none;
+}
+
+.menuList li {
+  margin: 0.5rem 0;
+  /* opacity: 0; */
+}
+
+.menuList a {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/*
+  Home
+*/
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeTitle {
+  font-size: 4rem;
+  font-style: italic;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
